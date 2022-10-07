@@ -64,11 +64,12 @@ sendBtn.addEventListener("click", function() {
     // Applicare sconto a prezzo parziale per ottenere prezzo totale
     const priceTotal = (pricePartial - ((pricePartial / 100) * discount)).toFixed(2);
     console.log("total", priceTotal);
+    
+    // OUTPUT
+    // Mostrare prezzo finale su schermo
+    document.getElementById("final-price").innerHTML = `Il prezzo del tuo biglietto è: ${priceTotal} €`;
+
+    // Pulizia input
+    userAgeInput.value = "";
+    userDistanceInput.value = "";
 })
-
-
-
-
-
-// OUTPUT
-// Mostrare prezzo finale su schermo
