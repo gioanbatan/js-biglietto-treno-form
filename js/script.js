@@ -21,16 +21,27 @@ console.log("pricePerKm", pricePerKm)
 // INPUT
 // L'utente fornisce i km da percorrere attraverso l'input
 const userAgeInput = document.getElementById("user-age");
+console.log(userAgeInput);
 
 // L'uterte fornisce l'età attraverso l'input
-const userDistance = document.getElementById("user-distance");
+const userDistanceInput = document.getElementById("user-distance");
+console.log(userDistanceInput);
 
 // Pulsante per l'invio dati
 const sendBtn = document.getElementById("send-btn");
 
 // DATA PROCESSING
+// Click sul punsante "Invia!"
 sendBtn.addEventListener("click", function() {
     console.log("CLICK btn")
+    console.log(userAgeInput.value);
+    console.log(userDistanceInput.value);
+
+    // Memorizzo il valore  di userAgeInput in userAge
+    const userAge = parseInt(userAgeInput.value);
+    // Memorizzo il valore  di userDistanceInput in userDistance
+    const userDistance = parseInt(userDistanceInput.value);
+    console.log("userAge", userAge, typeof(userAge), "userDistance", userDistance, typeof(userDistance))
 })
 // Calcolare prezzo parziale moltiplicando prezzo per km per i km da percorrere
 
