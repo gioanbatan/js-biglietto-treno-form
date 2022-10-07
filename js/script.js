@@ -16,13 +16,22 @@
 // DATA
 // Prezzo per km di 0.21€
 const pricePerKm = 0.21;
+console.log("pricePerKm", pricePerKm)
 
 // INPUT
 // L'utente fornisce i km da percorrere attraverso l'input
+const userAgeInput = document.getElementById("user-age");
 
 // L'uterte fornisce l'età attraverso l'input
+const userDistance = document.getElementById("user-distance");
+
+// Pulsante per l'invio dati
+const sendBtn = document.getElementById("send-btn");
 
 // DATA PROCESSING
+sendBtn.addEventListener("click", function() {
+    console.log("CLICK btn")
+})
 // Calcolare prezzo parziale moltiplicando prezzo per km per i km da percorrere
 
 // SE età utente è minore di 18 ALLORA impostare lo sconto a 20%
