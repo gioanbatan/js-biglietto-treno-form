@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -12,31 +17,38 @@
 </head>
 <body>
     <main>
-        <!-- Form -->
-        <!-- <form action=""> -->
-        <!-- User data input -->
-        <div class="ms_user-data">
-            <label for="user-age">Inserire l'età </label>
-            <input type="text" id="user-age">
-            
-            <label for="user-distance">Inserire la quantità di km da percorrere </label>
-            <input type="text" id="user-distance">
-        </div>
-        <!-- /User data input -->
+        <div class="ms_main-wrapper">
+                <!-- Form -->
+                <!-- <form action=""> -->
+                <!-- User data input -->
+                <div class="ms_user-data">
+                    <h1>Boolean Travels</h1>
 
-        <!-- Send button -->
-        <div class="ms_send">
-            <button id="send-btn">Invia!</button>
-        </div>
-        <!-- Send button -->
-        <!-- </form> -->
-        <!-- /Form -->
-        
-        <!-- Ouput section -->
-        <section class="output">
-            <h2 id="final-price">Il prezzo del tuo biglietto è: </h2>
-        </section>
-        <!-- /Ouput section -->
+                    <label for="user-age">Inserire l'età </label>
+                    <input type="text" id="user-age">
+                    
+                    <br>
+
+                    <label for="user-distance">Inserire la quantità di km da percorrere </label>
+                    <input type="text" id="user-distance">
+                    
+                    <!-- Send button -->
+                    <div class="ms_send">
+                        <button id="send-btn" class="btn">Invia!</button>
+                        <button id="clear-btn" class="btn">annulla</button>
+                    </div>
+                    <!-- Send button -->
+                </div>
+                <!-- /User data input -->
+                <!-- </form> -->
+                <!-- /Form -->
+                
+                <!-- Ouput section -->
+                <section class="output">
+                    <h2 id="final-price">Il prezzo del tuo biglietto è: </h2>
+                </section>
+                <!-- /Ouput section -->
+            </div>
     </main>
     <script src="js/script.js"></script>
 </body>
