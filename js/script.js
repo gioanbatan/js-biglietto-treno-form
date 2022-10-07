@@ -43,6 +43,11 @@ sendBtn.addEventListener("click", function() {
     const userDistance = parseInt(userDistanceInput.value);
     console.log("userAge", userAge, typeof(userAge), "userDistance", userDistance, typeof(userDistance))
     
+    
+    if (isNaN(userAge) || isNaN(userDistance)) {
+        alert("ERRORE! Inserire solo numeri!")
+    }
+
     // Calcolare prezzo parziale moltiplicando prezzo per km per i km da percorrere
     let pricePartial = parseInt(userDistance * pricePerKm);
     console.log("partial", pricePartial);
