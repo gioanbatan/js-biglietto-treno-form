@@ -29,6 +29,8 @@ console.log(userDistanceInput);
 
 // Pulsante per l'invio dati
 const sendBtn = document.getElementById("send-btn");
+// Pulsante per la pulizia dati
+const clearBtn = document.getElementById("clear-btn");
 
 // DATA PROCESSING
 // Click sul punsante "Invia!"
@@ -75,6 +77,11 @@ sendBtn.addEventListener("click", function() {
     document.getElementById("final-price").innerHTML = `Il prezzo del tuo biglietto è: ${priceTotal} €`;
 
     // Pulizia input
+    userAgeInput.value = "";
+    userDistanceInput.value = "";
+})
+
+clearBtn.addEventListener("click", function() {
     userAgeInput.value = "";
     userDistanceInput.value = "";
 })
