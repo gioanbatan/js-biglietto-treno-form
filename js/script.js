@@ -42,14 +42,33 @@ sendBtn.addEventListener("click", function() {
     // Memorizzo il valore  di userDistanceInput in userDistance
     const userDistance = parseInt(userDistanceInput.value);
     console.log("userAge", userAge, typeof(userAge), "userDistance", userDistance, typeof(userDistance))
+    
+    // Calcolare prezzo parziale moltiplicando prezzo per km per i km da percorrere
+    let pricePartial = parseInt(userDistance * pricePerKm);
+    console.log("partial", pricePartial);
+    
+    // Sconto
+    let discount = 0;
+    
+    // Sconto minorenni
+    // SE età utente è minore di 18 ALLORA impostare lo sconto a 20%
+    if (userAge < 18) {
+        discount = 20;
+    } else if (userAge >= 65) {
+        // Sconto over 65
+        // ALTRIMENTI SE età utente è maggiore/uguale a 65 ALLORA impostare lo sconto a 40%
+        discount = 40;
+    }
+    // ALTRIMENTI lo sconto resta a 0%
+
+    // Applicare sconto a prezzo parziale per ottenere prezzo totale
+    const priceTotal = (pricePartial - ((pricePartial / 100) * discount)).toFixed(2);
+    console.log("total", priceTotal);
 })
-// Calcolare prezzo parziale moltiplicando prezzo per km per i km da percorrere
 
-// SE età utente è minore di 18 ALLORA impostare lo sconto a 20%
-// ALTRIMENTI SE età utente è maggiore/uguale a 65 ALLORA impostare lo sconto a 40%
-// ALTRIMENTI lo sconto resta a 0%
 
-// Applicare sconto a prezzo parziale per ottenere prezzo finale
+
+
 
 // OUTPUT
 // Mostrare prezzo finale su schermo
