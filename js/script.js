@@ -15,9 +15,11 @@
 
 // DATA
 // Prezzo per km di 0.21€
+const pricePerKm = 0.21;
 
 // INPUT
 // L'utente fornisce i km da percorrere attraverso l'input
+
 // L'uterte fornisce l'età attraverso l'input
 
 // DATA PROCESSING
