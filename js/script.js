@@ -78,6 +78,10 @@ sendBtn.addEventListener("click", function() {
     console.log("total", priceTotal);
     
     // OUTPUT
+    // Output nome, cognome, età
+    document.getElementById("user-name-output").innerHTML = userNameInput.value
+    document.getElementById("user-lastname-output").innerHTML = userLastNameInput.value
+    document.getElementById("user-age-output").innerHTML = `Età ${userAge} anni`;
     // Mostrare prezzo finale su schermo
     document.getElementById("final-price").innerHTML = `Il prezzo del tuo biglietto è: ${priceTotal} €`;
 

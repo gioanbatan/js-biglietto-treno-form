@@ -26,21 +26,28 @@
 
                     <p>Inserisci i tuoi dati:</p>
 
-                    <label for="user-name">Nome</label>
-                    <input type="text" id="user-name">
+                    <div class="ms_user-input-container">
+                        <div class="ms_user-input">
+                            <label for="user-name">Nome</label>
+                            <input type="text" id="user-name">
+                        </div>
 
-                    <label for="user-lastname">Cognome</label>
-                    <input type="text" id="user-lastname">
+                        <div class="ms_user-input">
+                            <label for="user-lastname">Cognome</label>
+                            <input type="text" id="user-lastname">
+                        </div>
                     
-                    <label for="user-age">Età</label>
-                    <input type="text" id="user-age">
-                    
-                    <br>
+                        <div class="ms_user-input">
+                            <label for="user-age">Età</label>
+                            <input type="text" id="user-age">
+                        </div>
 
-                    <label for="user-distance">Inserire la quantità di km da percorrere </label>
-                    <input type="text" id="user-distance">
+                        <div class="ms_user-input">
+                            <label for="user-distance">Inserire la quantità di km da percorrere </label>
+                            <input type="text" id="user-distance">
+                        </div>
+                    </div>
 
-                    
                     <!-- Send button -->
                     <div class="ms_send">
                         <button id="send-btn" class="btn">Invia!</button>
@@ -54,6 +61,9 @@
                 
                 <!-- Ouput section -->
                 <section class="output">
+                    <h2 id="user-name-output"></h2>
+                    <h2 id="user-lastname-output"></h2>
+                    <h2 id="user-age-output"></h2>
                     <h2 id="final-price">Il prezzo del tuo biglietto è: </h2>
                 </section>
                 <!-- /Ouput section -->
