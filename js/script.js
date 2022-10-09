@@ -19,6 +19,11 @@ const pricePerKm = 0.21;
 console.log("pricePerKm", pricePerKm)
 
 // INPUT
+// L'utente fornisce nome e cognome
+const userNameInput = document.getElementById("user-name");
+const userLastNameInput = document.getElementById("user-lastname");
+console.log("Name and lastname", userNameInput, userLastNameInput);
+
 // L'utente fornisce i km da percorrere attraverso l'input
 const userAgeInput = document.getElementById("user-age");
 console.log(userAgeInput);
@@ -77,11 +82,15 @@ sendBtn.addEventListener("click", function() {
     document.getElementById("final-price").innerHTML = `Il prezzo del tuo biglietto è: ${priceTotal} €`;
 
     // Pulizia input
+    userNameInput.value = "";
+    userLastNameInput.value ="";
     userAgeInput.value = "";
     userDistanceInput.value = "";
 })
 
 clearBtn.addEventListener("click", function() {
+    userNameInput.value = "";
+    userLastNameInput.value ="";
     userAgeInput.value = "";
     userDistanceInput.value = "";
 })
